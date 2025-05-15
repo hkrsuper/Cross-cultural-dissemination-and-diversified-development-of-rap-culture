@@ -192,7 +192,7 @@ const impacts = [
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("/images/中国煤矿文工团在北京邮电大学演出《说唱大运河》.jpg")
+  background: url("@/assets/images/中国煤矿文工团在北京邮电大学演出《说唱大运河》.jpg")
     center/cover;
   opacity: 0.2;
   z-index: 1;
@@ -263,27 +263,27 @@ const impacts = [
 
 .traditional-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("images/中国曲艺.webp");
+    url("@/assets/images/中国曲艺.webp");
 }
 
 .crossover-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("images/现代说唱.png");
+    url("@/assets/images/现代说唱.png");
 }
 
 .heritage-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("images/rap1.jpg");
+    url("@/assets/images/rap1.jpg");
 }
 
 .innovation-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("images/说唱人.jpeg");
+    url("@/assets/images/说唱人.jpeg");
 }
 
 .social-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("images/中国煤矿文工团在北京邮电大学演出《说唱大运河》.jpg");
+    url("@/assets/images/中国煤矿文工团在北京邮电大学演出《说唱大运河》.jpg");
 }
 
 .card-content {
@@ -376,11 +376,7 @@ const impacts = [
 
 .impact-section {
   margin: 60px 0;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9)
-    ),
-    url("/images/嘻哈.webp") center/cover;
+  background: url("@/assets/images/嘻哈.webp") center/cover;
   background-attachment: fixed;
   padding: 80px 0;
   position: relative;

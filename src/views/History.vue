@@ -230,7 +230,7 @@ const features = ref([
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("/images/马街书会开场.webp") center/cover;
+  background: url("@/assets/images/马街书会开场.webp") center/cover;
   opacity: 0.2;
   z-index: 1;
 }
@@ -256,7 +256,8 @@ const features = ref([
 
 .timeline-section {
   margin: 60px 0;
-  background: #f5f7fa;
+  background: url("@/assets/images/说唱人.jpeg") center/cover;
+  background-attachment: fixed;
   padding: 80px 0;
   position: relative;
 }

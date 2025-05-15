@@ -224,7 +224,7 @@ const features = ref([
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("/images/东渡.webp") center/cover;
+  background: url("@/assets/images/东渡.webp") center/cover;
   opacity: 0.2;
   z-index: 1;
 }
@@ -489,7 +489,7 @@ const features = ref([
 
 .fusion-section {
   margin: 60px 0;
-  background: url("/images/东渡2.jpg") center/cover;
+  background: url("@/assets/images/东渡2.jpg") center/cover;
   background-attachment: fixed;
   padding: 80px 0;
   position: relative;
