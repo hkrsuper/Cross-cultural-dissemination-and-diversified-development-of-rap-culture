@@ -20,7 +20,7 @@
           <el-card class="content-card" :body-style="{ padding: '0px' }">
             <div
               class="card-image"
-              style="background-image: url('/images/东渡.webp')"
+              style="background-image: url('../assets/images/东渡.webp')"
             ></div>
             <div class="card-content">
               <div class="card-header">
@@ -42,7 +42,7 @@
           <el-card class="content-card" :body-style="{ padding: '0px' }">
             <div
               class="card-image"
-              style="background-image: url('/images/说唱人.jpeg')"
+              style="background-image: url('../assets/images/说唱人.jpeg')"
             ></div>
             <div class="card-content">
               <div class="card-header">
@@ -64,7 +64,7 @@
           <el-card class="content-card" :body-style="{ padding: '0px' }">
             <div
               class="card-image"
-              style="background-image: url('/images/东渡2.jpg')"
+              style="background-image: url('../assets/images/东渡2.jpg')"
             ></div>
             <div class="card-content">
               <div class="card-header">
@@ -152,7 +152,7 @@ import { ElRow, ElCol, ElCard, ElIcon } from "element-plus";
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("/images/中国有嘻哈.webp") center/cover;
+  background: url("../assets/images/中国有嘻哈.webp") center/cover;
   opacity: 0.2;
   z-index: 1;
 }
@@ -178,7 +178,7 @@ import { ElRow, ElCol, ElCard, ElIcon } from "element-plus";
 
 .content-section {
   margin: 60px 0;
-  background: url("/images/布鲁克林区.jpeg") center/cover;
+  background: url("../assets/images/布鲁克林区.jpeg") center/cover;
   background-attachment: fixed;
   padding: 80px 0;
   position: relative;
