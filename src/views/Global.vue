@@ -489,7 +489,7 @@ const features = ref([
 
 .fusion-section {
   margin: 60px 0;
-  background: url("@/assets/images/东渡2.jpg") center/cover;
+  /* background: url("@/assets/images/东渡2.jpg") center/cover; */
   background-attachment: fixed;
   padding: 80px 0;
   position: relative;
@@ -502,7 +502,7 @@ const features = ref([
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0);
   z-index: 1;
 }
 

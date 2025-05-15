@@ -45,70 +45,86 @@ const handleSelect = (key) => {
     <el-footer class="footer">
       <p>© 2024 说唱文化传播与多元发展研究</p>
     </el-footer>
+
+    <!-- 添加音乐播放器 -->
+    <div class="music-player">
+      <iframe
+        frameborder="no"
+        border="0"
+        marginwidth="0"
+        marginheight="0"
+        width="330"
+        height="86"
+        src="//music.163.com/outchain/player?type=2&id=478507889&auto=1&height=66"
+      ></iframe>
+    </div>
   </el-container>
 </template>
 
 <style>
 .app-container {
   min-height: 100vh;
+  background: #f5f7fa;
 }
 
 .header {
+  background: #1a1a2e;
+  padding: 0 20px;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
-  padding: 0 20px;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   height: 60px;
 }
 
 .logo {
-  color: #fff;
-  font-size: 24px;
+  color: white;
+  font-size: 1.5em;
   font-weight: bold;
-  margin-right: 40px;
   white-space: nowrap;
 }
 
 .nav-menu {
+  flex: 1;
+  margin-left: 40px;
   background: transparent;
   border: none;
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
 }
 
-.el-menu--horizontal {
-  border-bottom: none;
-}
-
-.el-menu--horizontal .el-menu-item {
-  color: #fff;
+.nav-menu .el-menu-item {
+  color: white;
+  font-size: 1.1em;
   height: 60px;
   line-height: 60px;
-  font-size: 16px;
 }
 
-.el-menu--horizontal .el-menu-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+.nav-menu .el-menu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
-.el-menu--horizontal .el-menu-item.is-active {
+.nav-menu .el-menu-item.is-active {
   color: #409eff;
   border-bottom: 2px solid #409eff;
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .el-main {
-  padding: 20px;
-  background-color: #f5f7fa;
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 .footer {
+  background: #1a1a2e;
+  color: white;
   text-align: center;
-  background: #1a1a1a;
-  color: #fff;
   padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .fade-enter-active,
@@ -119,5 +135,22 @@ const handleSelect = (key) => {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+/* 音乐播放器样式 */
+.music-player {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.music-player:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 </style>

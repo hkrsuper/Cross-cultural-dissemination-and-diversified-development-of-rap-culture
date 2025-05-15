@@ -256,7 +256,7 @@ const features = ref([
 
 .timeline-section {
   margin: 60px 0;
-  background: url("@/assets/images/说唱人.jpeg") center/cover;
+  /* background: url("@/assets/images/说唱人.jpeg") center/cover; */
   background-attachment: fixed;
   padding: 80px 0;
   position: relative;

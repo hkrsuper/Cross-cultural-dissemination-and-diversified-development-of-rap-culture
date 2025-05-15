@@ -373,7 +373,7 @@ const impacts = [
 }
 
 .impact-section {
-  margin: 60px 0;
+  /* margin: 60px 0;
   background: linear-gradient(
       rgba(255, 255, 255, 0.9),
       rgba(255, 255, 255, 0.9)
@@ -382,7 +382,7 @@ const impacts = [
   background-attachment: fixed;
   padding: 80px 0;
   position: relative;
-  z-index: 0;
+  z-index: 0; */
 }
 
 .impact-section::before {
