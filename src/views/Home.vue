@@ -20,7 +20,7 @@
           <el-card class="content-card" :body-style="{ padding: '0px' }">
             <div
               class="card-image"
-              style="background-image: url('@/assets/images/东渡.webp')"
+              :style="{ backgroundImage: `url(${dongdu})` }"
             ></div>
             <div class="card-content">
               <div class="card-header">
@@ -42,7 +42,7 @@
           <el-card class="content-card" :body-style="{ padding: '0px' }">
             <div
               class="card-image"
-              style="background-image: url('@/assets/images/说唱人.jpeg')"
+              :style="{ backgroundImage: `url(${shuochangren})` }"
             ></div>
             <div class="card-content">
               <div class="card-header">
@@ -64,7 +64,7 @@
           <el-card class="content-card" :body-style="{ padding: '0px' }">
             <div
               class="card-image"
-              style="background-image: url('@/assets/images/东渡2.jpg')"
+              :style="{ backgroundImage: `url(${dongdu2})` }"
             ></div>
             <div class="card-content">
               <div class="card-header">
@@ -126,6 +126,9 @@
 <script setup>
 import { Timer, Promotion, Connection } from "@element-plus/icons-vue";
 import { ElRow, ElCol, ElCard, ElIcon } from "element-plus";
+import dongdu from "@/assets/images/东渡.webp";
+import shuochangren from "@/assets/images/说唱人.jpeg";
+import dongdu2 from "@/assets/images/东渡2.jpg";
 </script>
 
 <style scoped>
@@ -178,7 +181,8 @@ import { ElRow, ElCol, ElCard, ElIcon } from "element-plus";
 
 .content-section {
   margin: 60px 0;
-  background: url("@/assets/images/布鲁克林区.jpeg") center/cover;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("@/assets/images/布鲁克林区.jpeg") center/cover; */
   background-attachment: fixed;
   padding: 80px 0;
   position: relative;
@@ -191,31 +195,27 @@ import { ElRow, ElCol, ElCard, ElIcon } from "element-plus";
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.05);
   z-index: 1;
 }
 
 .content-card {
   height: 100%;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: none;
-  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 2;
+  margin-bottom: 20px;
 }
 
 .content-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .card-image {
   height: 200px;
   background-size: cover;
   background-position: center;
-  position: relative;
+  background-repeat: no-repeat;
 }
 
 .card-content {

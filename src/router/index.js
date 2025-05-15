@@ -1,36 +1,33 @@
 import { createRouter, createWebHistory } from "vue-router";
-
-const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: () => import("../views/Home.vue"),
-  },
-  {
-    path: "/history",
-    name: "History",
-    component: () => import("../views/History.vue"),
-  },
-  {
-    path: "/global",
-    name: "Global",
-    component: () => import("../views/Global.vue"),
-  },
-  {
-    path: "/culture",
-    name: "Culture",
-    component: () => import("../views/Culture.vue"),
-  },
-  {
-    path: "/future",
-    name: "Future",
-    component: () => import("../views/Future.vue"),
-  },
-];
+import Home from "../views/Home.vue";
+import History from "../views/History.vue";
+import Global from "../views/Global.vue";
+import Culture from "../views/Culture.vue";
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes: [
+    {
+      path: "/",
+      name: "home",
+      component: Home,
+    },
+    {
+      path: "/history",
+      name: "history",
+      component: History,
+    },
+    {
+      path: "/global",
+      name: "global",
+      component: Global,
+    },
+    {
+      path: "/culture",
+      name: "culture",
+      component: Culture,
+    },
+  ],
 });
 
 export default router;

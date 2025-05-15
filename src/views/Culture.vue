@@ -173,6 +173,8 @@ const impacts = [
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-section {
@@ -184,6 +186,7 @@ const impacts = [
   border-radius: 20px;
   margin-bottom: 60px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .hero-overlay {
@@ -195,6 +198,7 @@ const impacts = [
   background: url("@/assets/images/中国煤矿文工团在北京邮电大学演出《说唱大运河》.jpg")
     center/cover;
   opacity: 0.2;
+  pointer-events: none;
   z-index: 1;
 }
 
@@ -227,17 +231,11 @@ const impacts = [
 
 .fusion-section {
   margin: 60px 0;
+  position: relative;
 }
 
 .fusion-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0);
-  z-index: 1;
+  display: none;
 }
 
 .fusion-card {
@@ -376,10 +374,15 @@ const impacts = [
 
 .impact-section {
   margin: 60px 0;
-  background: url("@/assets/images/嘻哈.webp") center/cover;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("@/assets/images/嘻哈.webp") center/cover;
   background-attachment: fixed;
   padding: 80px 0;
   position: relative;
+  z-index: 0;
 }
 
 .impact-section::before {
