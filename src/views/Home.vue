@@ -126,7 +126,6 @@
 <script setup>
 import { Timer, Promotion, Connection } from "@element-plus/icons-vue";
 import { ElRow, ElCol, ElCard, ElIcon } from "element-plus";
-import "animate.css/animate.min.css";
 </script>
 
 <style scoped>
